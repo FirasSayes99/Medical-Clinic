@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!----header css----->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/header/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/header/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/header/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/header/css/style.css">
+  <!-----End header css----->
+
+
+<!--=========================page CSS =============================================-->
+	<link rel="icon" type="image/png" href="../assets/contact/images/icons/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="../assets/contact/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../assets/contact/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body onload="startTime()">
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+		  <div class="site-mobile-menu-close mt-3">
+			<span class="icon-close2 js-menu-toggle"></span>
+		  </div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	  </div>
+  
+  
+	  <div class="top-bar">
+		<div class="container">
+		  <div class="row">
+			<div class="col-12">
+			  <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">d@mail.com</span></a>
+			  <span class="mx-md-2 d-inline-block"></span>
+			  <span class="mr-2  icon-clock-o">  <span id="txt"></span> </span>
+			  <span id="txt"></span>
+			  <span class="mx-md-2 d-inline-block"></span>
+			  <span class="mr-2  icon-date_range"> <span id="date-time"></span> </span>
+  
+			  <div class="float-right">
+  
+				<a href="#" class=""><span class="mr-2  icon-twitter"></span> <span class="d-none d-md-inline-block">Twitter</span></a>
+				<span class="mx-md-2 d-inline-block"></span>
+				<a href="#" class=""><span class="mr-2  icon-facebook"></span> <span class="d-none d-md-inline-block">Facebook</span></a>
+  
+			  </div>
+  
+			</div>
+  
+		  </div>
+  
+		</div>
+	  </div>
+  
+	  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+  
+		<div class="container">
+			<div class="row align-items-center position-relative">
+		
+		
+			<div class="site-logo">
+			  <a href="index.html" class="text-black"><span class="text-primary">AnyTHing</span></a>
+			</div>
+		
+			<div class="col-12">
+			  <nav class="site-navigation text-right ml-auto " role="navigation">
+		
+			  <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+				<li><a href="../index.html" class="nav-link">Home</a></li>
+				<li><a href="#services-section" class="nav-link">Services</a></li>
+		
+		
+				<li class="has-children">
+				<a href="#about-section" class="nav-link">About Us</a>
+				<ul class="dropdown arrow-top">
+				  <li><a href="../pages/team.html" class="nav-link">Team</a></li>
+				  <li><a href="../pages/about.html" class="nav-link">About Org</a></li>
+		  
+				</ul>
+				</li>
+				<li><a href="../pages/contactUs.html" class="nav-link">Contact</a></li>
+				<li><a href="#contact-section" class="nav-link">Login</a></li>
+	  
+			  </ul>
+			  </nav>
+		
+			</div>
+		
+			</div>
+			<div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+			</div>
+		</div>
+  
+	  </header>
+	  
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="../assets/contact/images/img-01.png" alt="IMG">
+			</div>
+
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Get in touch
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Subject is required">
+					<input class="input1" type="text" name="subject" placeholder="Subject">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate = "Message is required">
+					<textarea class="input1" name="message" placeholder="Message"></textarea>
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Send Email
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+  <!-- Section: footer -->
+  <section class="footer">
+	<form action="">
+	  <!--Grid row-->
+	  <div class="row d-flex justify-content-center">
+		<!--Grid column-->
+		<div class="col-auto">
+		  <p class="pt-2">
+			<strong>Sign up for our newsletter</strong>
+		  </p>
+		</div>
+		<!--Grid column-->
+
+		<!--Grid column-->
+		<div class="col-md-5 col-12">
+		  <!-- Email input -->
+		  <div class="form-outline mb-4">
+			<input type="email" id="form5Example27" class="form-control" placeholder="Email address" />
+		  </div>
+		</div>
+		<!--Grid column-->
+
+		<!--Grid column-->
+		<div class="col-auto">
+		  <!-- Submit button -->
+		  <button type="submit" class="btn  mb-4">
+			Subscribe
+		  </button>
+		</div>
+		<!--Grid column-->
+	  </div>
+	  <!--Grid row-->
+	</form>
+  </section>
+  <!-- Section: Form -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  © 2020 Copyright:
+  <a class="text-dark" href="#">Xtest.com</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!---------page JS  -------------->
+    <script src="../assets/contact/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/contact/vendor/bootstrap/js/popper.js"></script>
+	<script src="../assets/contact/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/contact/vendor/select2/select2.min.js"></script>
+	<script src="../assets/contact/vendor/tilt/tilt.jquery.min.js"></script>
+	<script src="../assets/contact/js/main.js"></script>
+<!---------page JS  -------------->
+	 
+<!---------header JS  -------------->
+	<script src="../assets/header/js/jquery-3.3.1.min.js"></script>
+	<script src="../assets/header/js/popper.min.js"></script>
+	<script src="../assets/header/js/bootstrap.min.js"></script>
+	<script src="../assets/header/js/jquery.sticky.js"></script>
+	<script src="../assets/header/js/main.js"></script>
+	<!------------------------------>
+	<script src="../assets/script.js" ></script>
+
+</body>
+</html>

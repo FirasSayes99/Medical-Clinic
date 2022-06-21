@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('../assets/contact/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.imgShefter{
+  padding-top: 100px;
+  width:30%;
+  height: 40%;
+  background-color: red;
+}  
+
+.slider{
+  box-sizing: border-box;
+  padding-bottom: 30px;
+
+}
+
+.cards{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+ 
+}
+
+
+
+
+.bi{
+ 
+  color:rgb(242, 237, 237);
+  font-size: 20px;
+
+}
+
+
+
+.content{
+  width: 100%;
+  min-height:100%;
+  padding: 15px;
+  background: #009bff;
+  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+  background: -o-linear-gradient(left, #0072ff, #00c6ff);
+  background: -moz-linear-gradient(left, #0072ff, #00c6ff);
+  background: linear-gradient(left, #0072ff, #00c6ff);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer{
+  width: 99%;
+  padding: 10px;
+}
+
+
+
+
+.footer button{
+  border-radius: 25px;
+  background: #57b846;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.cards img{
+width: 100%;
+  height: 40%;
+}
