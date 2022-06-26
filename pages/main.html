@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css"/>
+
+</head>
+<body>
+    <div class="admin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="admin-page">
+                        <input type="search" id="search" class="search rounded-2 my-3 w-100" placeholder="Enter Patient Number" onkeyup="search(this.value)"/>
+                        <table border="1" class="table table-striped ">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th class="text-capitalize">first name</th>
+                                <th class="text-capitalize">last name</th>
+                                <th  class="text-capitalize">mobile number</th>
+                                <th class="text-capitalize">date</th>
+                                <th  class="text-capitalize">time</th>
+                                <th class="text-capitalize">edit</th>
+                                <th class="text-capitalize">delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentdata"></tbody>
+                    </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-info mt-3">
+                        <input placeholder="Enter First Name" id="patientname" type="text" class="inputs form-control mb-2" />
+                        <input placeholder="Enter Last Name" id="patientname2" type="text" class="inputs form-control mb-2" />
+                        <input placeholder="Enter Mobile Number" id="patientnumber" type="tel" class="inputs form-control mb-2" />
+                        <input  id="pdate" type="date" class="inputs form-control mb-2" />
+                        <input  id="ptime" type="time" class="inputs form-control mb-2" />
+                        <button class="text-capitalize d-block w-100 btn btn-info fs-5 text-white rounded-3  mb-2" id="savebtn">save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
