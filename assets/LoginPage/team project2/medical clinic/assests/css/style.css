@@ -1,0 +1,22 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.admin {
+    background-image: linear-gradient(to bottom right, #138593, #11E06C);
+}
+
+.pic {
+    background-image: url(../img/background.jpg);
+    background-position: -500px 0;
+
+}
+
+.pic h1 {
+    background-image: linear-gradient(to bottom right, #138593, #11E06C);
+}
+
+.adminWelcome {
+    background-color: white;
+}
