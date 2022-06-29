@@ -213,3 +213,38 @@ doctorPassword.onkeyup = function () {
 doctorAge.onkeyup = function () {
     checkAll();
 }
+
+
+//Login form
+function Login(){
+    let username = document.getElementById("formGroupExampleInput").value;
+    let pass = document.getElementById("formGroupExampleInput2").value;
+
+    if ( username.length==0 || pass.length==0){
+        Swal.fire({
+            title: 'Error!',
+            text: 'All Feilds are required',
+            icon: 'error',
+            confirmButtonText: 'OK'
+            
+        })
+    }
+    else{
+        for (var i = 0; i < doctors.length; i++) {
+            if(doctors[i].name == username && doctors[i].Password == pass){
+                window.open("../pages/main.html")
+                
+            } 
+            else{
+            Swal.fire({
+                title: 'Error!',
+                text: 'Username or Password is invalid',
+                icon: 'error',
+                confirmButtonText: 'Try Again!'
+                
+            })
+        }
+        }
+    }
+
+}
