@@ -216,9 +216,23 @@ doctorAge.onkeyup = function () {
 
 
 //Login form
+
+
+
 function Login(){
+    var test1="Admin";  //admin Login data
+    var test2="test@123";
+
     let username = document.getElementById("formGroupExampleInput").value;
     let pass = document.getElementById("formGroupExampleInput2").value;
+
+    console.log(username);
+    console.log(pass);
+
+    if ( username==test1 && pass==test2) {
+        window.location.href = 'Admin.html';
+        
+    } 
 
     if ( username.length==0 || pass.length==0){
         Swal.fire({
@@ -232,7 +246,15 @@ function Login(){
     else{
         for (var i = 0; i < doctors.length; i++) {
             if(doctors[i].name == username && doctors[i].Password == pass){
-                window.open("../pages/main.html")
+                //window.open("../pages/main.html")
+               
+                window.location.href = '../pages/main.html';
+                Swal.fire({
+                    title: 'success!',
+                    text: 'success',
+                    icon: 'success',
+                    confirmButtonText: 'All Good!'
+                })
                 
             } 
             else{
@@ -248,3 +270,5 @@ function Login(){
     }
 
 }
+
+
