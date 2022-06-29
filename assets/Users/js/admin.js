@@ -82,3 +82,10 @@ function savechanges(){
     localStorage.setItem("appointmentlist",JSON.stringify(patients));
     displaypatient();
 } 
+
+deleteall.onclick=function(){
+    localStorage.removeItem("appointmentlist");
+    patients=[];
+    appointmentdata.innerHTML="";
+    alert("Are you sure?");  
+}

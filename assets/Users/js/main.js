@@ -25,6 +25,7 @@ function addpatient(){
     patients.push(patient);
     localStorage.setItem("appointmentlist",JSON.stringify(patients));
     alert("Successfully Booked");
+    cleardata();
     removevalid();
 }
 
