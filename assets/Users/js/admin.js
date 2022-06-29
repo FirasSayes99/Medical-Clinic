@@ -87,5 +87,5 @@ deleteall.onclick=function(){
     localStorage.removeItem("appointmentlist");
     patients=[];
     appointmentdata.innerHTML="";
-    alert("Are you sure?");  
+    alert("Do you want to delete all items?");  
 }
