@@ -2,7 +2,7 @@ body {
   
   
   background-color: #fff;
-  height: 200vh;
+  height: 100vh;
   position: relative; }
   body:before {
     content: "";

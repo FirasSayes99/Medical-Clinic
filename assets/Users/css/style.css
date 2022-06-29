@@ -71,14 +71,17 @@
   }
  
 
-.footer{
-    width: 99%;
+  .footer{
+    width: 100%;
     padding: 10px;
   }
+  
+
   .footer button{
     border-radius: 25px;
     background: #57b846;
     font-family: Montserrat-Bold;
     font-size: 15px;
+    line-height: 1.5;
     color: #fff;
   }
