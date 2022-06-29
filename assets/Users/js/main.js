@@ -24,7 +24,24 @@ function addpatient(){
     }
     patients.push(patient);
     localStorage.setItem("appointmentlist",JSON.stringify(patients));
+    alert("Successfully Booked");
+    removevalid();
 }
+
+function cleardata(){
+    for(var i=0; i<inputs.length; i++){
+        inputs[i].value="";
+    }
+}
+
+function removevalid(){
+    patientname.classList.remove('is-valid');
+    patientname2.classList.remove('is-valid');
+    patientnumber.classList.remove('is-valid');
+    pdate.classList.remove('is-valid');
+    ptime.classList.remove('is-valid');
+}
+
 
 var namepattern=/^[a-zA-Z]{3,10}$/;
 var numberpattern=/^[0][5][0269][0-9]{7,7}$/;
