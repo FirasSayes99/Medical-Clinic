@@ -43,7 +43,6 @@ function removevalid(){
     ptime.classList.remove('is-valid');
 }
 
-
 var namepattern=/^[a-zA-Z]{3,10}$/;
 var numberpattern=/^[0][5][0269][0-9]{7,7}$/;
 var datepattern=/[0-9][0-9][0-9][0-9]\-[01][0-9]\-[0-9][0-9]/;
@@ -116,9 +115,8 @@ function enabeldbtn(){
 function duplication(){
  for(var i=0; i<patients.length; i++){
      if(pdate.value==patients[i].date && ptime.value==patients[i].time){
-         alert("choose another date or time");
-         bookbtn.disabled="true";
-         
+         alert("Please, choose another date or time");
+         bookbtn.disabled="true";    
      } 
  }
 
