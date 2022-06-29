@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/Users/css/style.css">
+    <link rel="stylesheet" href="../assets/Users/css/all.min.css"/>
+    <link rel="stylesheet" href="../pages/main.htmlmain.html"/>
+
+    
+
+    <!----header css----->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/header/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../assets/header/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/header/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/header/css/style.css">
+    <!-----End header css----->
+
+</head>
+<body body onload="startTime()">
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+  
+  
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">d@mail.com</span></a>
+              <span class="mx-md-2 d-inline-block"></span>
+              <span class="mr-2  icon-clock-o">  <span id="txt"></span> </span>
+              <span id="txt"></span>
+              <span class="mx-md-2 d-inline-block"></span>
+              <span class="mr-2  icon-date_range"> <span id="date-time"></span> </span>
+  
+              <div class="float-right">
+  
+                <a href="#" class=""><span class="mr-2  icon-twitter"></span> <span class="d-none d-md-inline-block">Twitter</span></a>
+                <span class="mx-md-2 d-inline-block"></span>
+                <a href="#" class=""><span class="mr-2  icon-facebook"></span> <span class="d-none d-md-inline-block">Facebook</span></a>
+  
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    
+        <div class="container">
+          <div class="row align-items-center position-relative">
+      
+      
+          <div class="site-logo">
+            <a href="main.html" class="text-black"><span class="text-primary">Any THing</span></a>
+          </div>
+      
+          <div class="col-12">
+            <nav class="site-navigation text-right ml-auto " role="navigation">
+      
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+              <li><a href="../pages/main.html" class="nav-link">Home</a></li>
+              </li>
+              <li><a href="../pages/users.html" class="nav-link">Add New Appointment</a></li>
+              <li><a href="#contact-section" class="nav-link">Login</a></li>
+    
+            </ul>
+            </nav>
+      
+          </div>
+      
+          </div>
+          <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      
+    </header>
+    <header class="appointemt py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <div class="patient-info me-auto rounded-5 bg-white py-5 mb-5">
+                        <h2 class="fs-2 text-center text-capitalize">book appointment</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12 mb-2">
+                                    <div class="inputs-item">
+                                        <label class="text-capitalize mb-2 ps-3">first name <span class="text-danger">*</span></label>
+                                        <input placeholder="Enter First Name" id="patientname" type="text" class="inputs form-control" required/>
+                                    </div> 
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="inputs-item">
+                                        <label class="text-capitalize mb-2 ps-3">last name <span class="text-danger">*</span></label>
+                                        <input placeholder="Enter Last Name" id="patientname2" type="text" class="inputs form-control" required/>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <div class="inputs-item">
+                                        <label class="text-capitalize mb-2 ps-3">mobile number <span class="text-danger">*</span></label>
+                                        <input placeholder="Enter Mobile Number" id="patientnumber" type="tel" class="inputs form-control" required/>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <div class="inputs-item">
+                                        <label class="text-capitalize mb-2 ps-3">appointment date <span class="text-danger">*</span></label>
+                                        <input  id="pdate" type="date" class="inputs form-control" required/>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-2">
+                                    <div class="inputs-item">
+                                        <label  class="text-capitalize mb-2 ps-3">appointement time <span class="text-danger">*</span></label>
+                                        <input  id="ptime" type="time" class="inputs form-control" required/>
+                                    </div>
+                                </div>
+        
+                           </div>
+                           <!--<a href="main.html" class="text-uppercase mt-4 btn btn-info w-100" target="_blank" id="click">book an appointment</a> -->  
+                          <button class="text-uppercase mt-4 btn btn-info w-100" href="main.html" id="click" disabled>book an appointment</button>                 
+        
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="header-mobile position-relative">
+                        <img src="../assets/Users/image/mobile.f82d7322.png" class="img-fluid"/>
+                        <img src="../assets/Users/image/women.eb5c49c5.png" class="women position-absolute"/>
+                        <img src="../assets/Users/image/review.png" class="review position-absolute top-0 end-0"/>
+                    </div>
+                </div>
+            </div>
+            </header>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../assets/Users/js/main.js"></script>
+    <script src="../assets/Users/js/admin.js"></script> 
+</body>
+</html>

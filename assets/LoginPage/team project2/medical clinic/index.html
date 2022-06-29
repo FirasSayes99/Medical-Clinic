@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesom 6 -->
+    <link rel="stylesheet" href="./assests/css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="./assests/css/sweetalert2.css">
+
+
+</head>
+
+<body>
+
+    <div class="row admin vh-100 d-flex flex-nowrap">
+
+        <div class=" pic w-25 h-100 d-flex text-center align-content-start flex-wrap pt-3">
+            <h1 class="w-100 rounded-pill p-2 adminWelcome border border-5">welcome to admin page</h1>
+
+        </div>
+        <div class="w-75 border-start">
+            <div class="container mt-4">
+                <h1 class="text-center mb-5 position-relative">Management System</h1>
+                <div class="row w-100">
+                    <label class="w-25" for="">Doctor name <span class="text-danger">*</span></label>
+                    <input class="inputs form-control w-50" type="text" placeholder="Insert your Full Name" id="doctorName">
+                    <div id="nameAlert" class="alert alert-danger d-none w-25">please insert your full name:ex,Mahmoud Ghassan Sholi</div>
+                </div>
+                <div class="row w-100">
+                    <label for="doctorAge" class="w-25" for="">Doctor age <span class="text-danger">*</span></label>
+                    <input class="inputs form-control w-50" type="number" name="doctorAge" min="24" max="113" placeholder="Insert your age" id="doctorAge">
+                    <div id="ageAlert" class="alert alert-danger d-none w-25">Please enter true age</div>
+                    
+                </div>
+                <div class="row w-100">
+                    <label class="w-25" for="">Department</label>
+                    <input class="inputs form-control w-50" type="text" placeholder="Insert your department"
+                        id="doctorDepartment">
+                </div>
+                <div class="row w-100">
+                    <label class="w-25" for="">Qualification</label>
+                    <textarea class="inputs form-control w-50" placeholder="Insert your scientific degree"
+                        id="doctorQualification"></textarea>
+                </div>
+                <div class="pt-3 text-center align-items-center">
+                    <button class="btn btn-outline-success mt-3 " id="click" disabled>Add new doctor</button>
+                </div>
+
+
+            </div>
+            <div class="container position-relative">
+                <input type="search" placeholder="search... 
+         " id="search" class="form-control my-3" onkeyup="search(this.value)">
+
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Department</th>
+                            <th>Qualifications</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+
+
+                    </tbody>
+
+                </table>
+                <button id="deletBtn"
+                    class="deletAll btn btn-danger text-center my-5 position-absolute top-100 start-50">Delete
+                    All</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assests/js/sweetalert2.all.min.js"></script>
+    <script src="./assests/js/bootstrap.bundle.min.js"></script>
+    <script src="./assests/js/main.js"></script>
+</body>
+
+</html>
