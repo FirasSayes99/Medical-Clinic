@@ -18,12 +18,9 @@
 
 /* BASIC */
 
-html {
-    background-color: #56baed;
-  }
+
   
   body {
-    height: 100vh;
     background-color: #fff;
     height: 100vh;
     position:-webkit-sticky;
