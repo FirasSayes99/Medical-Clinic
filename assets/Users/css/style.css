@@ -53,3 +53,32 @@
         transform: translateY(8px);
     }
 }
+
+/*
+.bi-pen{
+    color: #000;
+}
+
+.bi-trash{
+    color: #000;
+}
+
+*/
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../../../assets/contact/fonts/montserrat/Montserrat-Bold.ttf');
+  }
+ 
+
+.footer{
+    width: 99%;
+    padding: 10px;
+  }
+  .footer button{
+    border-radius: 25px;
+    background: #57b846;
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    color: #fff;
+  }
