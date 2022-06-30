@@ -121,3 +121,7 @@ function duplication(){
  }
 
 }
+
+function LogOut(){
+    window.location.href = '../index.html';
+}

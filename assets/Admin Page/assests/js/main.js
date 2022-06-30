@@ -272,12 +272,10 @@ function Login(){
 }
 
 
-/**
+
  
-شوفها بكرا 
- */
+
 function LogOut(){
+    
     window.location.href = '../index.html';
-
 }
-
