@@ -214,7 +214,7 @@ doctorAge.onkeyup = function () {
     checkAll();
 }
 
-
+/*
 //Login form
 
 
@@ -279,3 +279,4 @@ function LogOut(){
     
     window.location.href = '../index.html';
 }
+*/
