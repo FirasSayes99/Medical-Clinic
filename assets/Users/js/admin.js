@@ -1,6 +1,7 @@
 var appointmentdata=document.getElementById("appointmentdata");
 var savebtn=document.getElementById("savebtn");
 var currentindex=0;
+var deleteall=document.getElementById("deleteall");
 
 if(localStorage.getItem("appointmentlist")==null){
     var patients=[];
@@ -23,8 +24,8 @@ function displaypatient(){
         <td>${patients[i].number}</td> 
         <td>${patients[i].date}</td>
         <td>${patients[i].time}</td>
-        <td> <button class="btn btn-primary" onclick="editappointment(${i})"> <i class="fa fa-pen"></i> </button></td>
-        <td> <button class="btn btn-warning" onclick="deleteappointment(${i})"> <i class="fa-solid fa-trash text-white"></i> </button></td>
+        <td> <button class="btn btn-primary" onclick="editappointment(${i})"> <i class="fas fa-pen"></i> </button></td>
+        <td> <button class="btn btn-warning" onclick="deleteappointment(${i})"> <i class="fa-solid fa-trash-can text-white"></i> </button></td>
         </tr>`;
     }
     appointmentdata.innerHTML=result;
@@ -46,8 +47,8 @@ function search(SearchnNumber){
             <td>${patients[i].number}</td> 
             <td>${patients[i].date}</td>
             <td>${patients[i].time}</td>
-            <td> <button class="btn btn-primary"> <i class="fa fa-pen"></i> </button></td>
-            <td> <button class="btn btn-warning" > <i class="fa-solid fa-trash text-white"></i> </button></td>
+            <td> <button class="btn btn-primary"> <i class="fas fa-pen"></i> </button></td>
+            <td> <button class="btn btn-warning" > <i class="fa-solid fa-trash-can text-white"></i> </button></td>
             </tr>`;
          }
      }
@@ -87,5 +88,6 @@ deleteall.onclick=function(){
     localStorage.removeItem("appointmentlist");
     patients=[];
     appointmentdata.innerHTML="";
-    alert("Do you want to delete all items?");  
+    alert("Are you sure?");
+    
 }

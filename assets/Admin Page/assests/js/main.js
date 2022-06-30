@@ -11,7 +11,7 @@ var passwordAlert = document.getElementById('passwordAlert');
 var ageAlert = document.getElementById('ageAlert');
 var currentIndex = 0;
 var inputs = document.getElementsByClassName('inputs');
-var doctors = [];
+//var doctors = [];
 
 if (localStorage.getItem("doctorList") == null) {
     var doctors = [];
@@ -23,12 +23,15 @@ if (localStorage.getItem("doctorList") == null) {
 addBtn.onclick = function () {
     if (addBtn.innerHTML == "Add new doctor") {
         addDoctor();
+        displayData();
+        clearform();
     }
     else {
         dataUpdate();
+        displayData();
+        clearform();
     }
-    displayData();
-    clearform();
+
 }
 
 
@@ -71,6 +74,7 @@ function clearform() {
     }
     addBtn.innerHTML = "Add new doctor";
 }
+
 function deletedoctor(index) {
     Swal.fire({
         title: 'Are you sure?',
@@ -164,6 +168,8 @@ function dataUpdate() {
     localStorage.setItem("doctorList", JSON.stringify(doctors));
 }
 
+/*
+
 let checkAll = function () {
     var namePattern = /^[A-Z][a-z]{2,10} [A-Z][a-z]{2,10} [A-Z][a-z]{2,10}$/;
     if (namePattern.test(doctorName.value)) {
@@ -204,6 +210,7 @@ let checkAll = function () {
 
 }
 
+*/
 doctorName.onkeyup = function () {
     checkAll();
 }

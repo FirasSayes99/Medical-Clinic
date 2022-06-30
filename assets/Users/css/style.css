@@ -1,82 +1,155 @@
-
-.appointemt{
-    background:  lightgray;
-}
-.appointemt .btn{
-    min-width: 193px;
-    height: 55px;
-    border-radius: 25px;
-    background: #57b846;
-    font-family: Montserrat-Bold;
-    font-size: 15px;
-    line-height: 1.5;
-    color: #fff;
-}
-
-.appointemt h2{
-    font-family: Montserrat-Bold;
-}
-
-.women{
-    animation-name: women;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-}
-
-
-@keyframes women{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(10px);
-    }
-}
-
-.women{
-    width: 35%;
-    top:34%;
-    left: 50%;
-}
-.review{
-    animation-name: review;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-duration: 1.5s;
-}
-@keyframes review{
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(8px);
-    }
-}
-
-/*
-.bi-pen{
-    color: #000;
-}
-
-.bi-trash{
-    color: #000;
-}
-
-*/
-
 @font-face {
     font-family: Montserrat-Bold;
     src: url('../../../assets/contact/fonts/montserrat/Montserrat-Bold.ttf');
   }
+  
+.search{
+    width:83%;
+}
+.active{
+    color:#f17732 !important;
+    font-weight: bolder;
+}
+.pages,.services,.contact{
+    color:#1f2278 !important;
+    font-weight: bolder;
+}
+
+.header{
+    background-image: url('../image/headerimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
  
+    
+}
+.header-heading{
+    color:#1f2278 !important;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.header-content{
+    margin-top: 25%;
+}
+.header-img{
+    margin-top: 15%;
+}
+
+@media(max-width:768px){
+    .header-heading{
+        font-size: 30px;
+    }
+    .header-img{
+        width:70%;
+        margin: auto;
+    }
+}
+.btn{
+    background-color: #f17732;
+    width: fit-content;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background-color: #f17732 !important;
+    opacity: 0.8;
+    color: white;
+}
+
+.header-img{
+    animation-name: nurse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes nurse{
+    0%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+.about-heading{
+    color: #1f2278 !important;
+    font-weight: 700;
+}
+.about-item{
+    border-color: #f17732 !important;
+    color: #1f2278 !important;
+    position: relative;
+}
+
+.about-item i{
+    animation-name: car;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes car{
+    0%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(-2px);
+    }
+}
+.work{
+    background-image: url('../image/headerimage.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.work-items{
+    background-color: white !important;
+    width:82%;
+}
+.work-heading{
+    color: #1f2278 !important;
+    font-weight: 700;
+    font-size: 70px;
+}
+.work-number{
+    color:#f17732 !important;
+    font-size: 80px;
+    font-weight: 900;
+}
+.work-h3{
+    color: #f17732 !important;
+    font-weight: 700;
+}
+.patient-info{
+    background-color: #f8f9fa !important;
+   
+}
+.about-img{
+    position: absolute;
+    top: 12%;
+    left:83%;
+    animation-name: round;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes round{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+
+}
+
 
   .footer{
-    width: 100%;
+    width: 99%;
     padding: 10px;
   }
-  
-
   .footer button{
     border-radius: 25px;
     background: #57b846;
@@ -85,7 +158,4 @@
     line-height: 1.5;
     color: #fff;
   }
-
-.search{
-    width:88%;
-}
+  

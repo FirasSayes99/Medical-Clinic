@@ -4,6 +4,7 @@ var patientnumber=document.getElementById("patientnumber");
 var pdate=document.getElementById("pdate");
 var ptime=document.getElementById("ptime");
 var bookbtn=document.getElementById("click");
+var inputs=document.getElementsByClassName("inputs");
 
 
 bookbtn.onclick=function(){
@@ -116,12 +117,9 @@ function duplication(){
  for(var i=0; i<patients.length; i++){
      if(pdate.value==patients[i].date && ptime.value==patients[i].time){
          alert("Please, choose another date or time");
-         bookbtn.disabled="true";    
-     } 
+         bookbtn.disabled="true";
+         
+     }
  }
 
-}
-
-function LogOut(){
-    window.location.href = '../index.html';
 }
