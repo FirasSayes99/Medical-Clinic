@@ -168,7 +168,7 @@ function dataUpdate() {
     localStorage.setItem("doctorList", JSON.stringify(doctors));
 }
 
-/*
+
 
 let checkAll = function () {
     var namePattern = /^[A-Z][a-z]{2,10} [A-Z][a-z]{2,10} [A-Z][a-z]{2,10}$/;
@@ -210,7 +210,7 @@ let checkAll = function () {
 
 }
 
-*/
+
 doctorName.onkeyup = function () {
     checkAll();
 }
