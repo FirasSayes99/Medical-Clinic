@@ -1,8 +1,7 @@
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('../assets/contact/fonts/montserrat/Montserrat-Bold.ttf');
+  src: url('../../../assets/contact/fonts/montserrat/Montserrat-Bold.ttf');
 }
-
 
 * {
 	margin: 0px; 
