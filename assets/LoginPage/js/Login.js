@@ -14,6 +14,7 @@ function Login(){
     else{
         console.log(username);
         console.log(pass);
+        
         document.getElementById("formGroupExampleInput").value = "";
         document.getElementById("formGroupExampleInput2").value = "";
     }
